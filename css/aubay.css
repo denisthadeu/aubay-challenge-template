@@ -1,0 +1,19 @@
+:root {
+    --aubay-main-color: #e64415;
+    --aubay-font-color: #fff;
+}
+tbody tr {
+    cursor:pointer;
+}
+tbody tr:hover {
+    background-color: var(--aubay-main-color);
+    color: var(--aubay-font-color)
+}
+label {
+    color: var(--aubay-main-color);
+    font-weight: bold;
+}
+.logo-login {
+    position: relative;
+    left: 7%;
+}
