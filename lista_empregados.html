@@ -302,7 +302,10 @@
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
           <h1 class="h3 mb-0 text-gray-800">Empregados</h1>
-          <a href="criar_empregado.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Criar Novo Empregado</a>
+          <div>
+            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Importar Empregados</a>
+            <a href="criar_empregado.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Criar Novo Empregado</a>
+          </div>
         </div>
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
@@ -314,6 +317,7 @@
               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                 <tr>
+                  <th>Ações</th>
                   <th>Nome</th>
                   <th>Whatsapp</th>
                   <th>E-mail</th>
@@ -324,6 +328,7 @@
                 </thead>
                 <tfoot>
                 <tr>
+                  <th>Ações</th>
                   <th>Nome</th>
                   <th>Whatsapp</th>
                   <th>E-mail</th>
@@ -334,6 +339,17 @@
                 </tfoot>
                 <tbody>
                 <tr onclick="location.href='detalhes_empregado.html'">
+                  <td>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white">
+                      <i class="fas fa-pencil-square fa-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                        </svg>
+                      </i>
+                    </a>
+                  </td>
                   <td>Denis Baptista</td>
                   <td>+351 911 123 345</td>
                   <td>email@aubay.pt</td>
@@ -342,6 +358,17 @@
                   <td>Inativo</td>
                 </tr>
                 <tr onclick="location.href='detalhes_empregado.html'">
+                  <td>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white">
+                      <i class="fas fa-pencil-square fa-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                        </svg>
+                      </i>
+                    </a>
+                  </td>
                   <td>Fadi</td>
                   <td>+351 911 123 345</td>
                   <td>email@aubay.pt</td>
@@ -350,6 +377,17 @@
                   <td>Ativo</td>
                 </tr>
                 <tr onclick="location.href='detalhes_empregado.html'">
+                  <td>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white">
+                      <i class="fas fa-pencil-square fa-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                        </svg>
+                      </i>
+                    </a>
+                  </td>
                   <td>Thiago Bomfim</td>
                   <td>+351 911 123 345</td>
                   <td>email@aubay.pt</td>
@@ -358,6 +396,17 @@
                   <td>Ativo</td>
                 </tr>
                 <tr onclick="location.href='detalhes_empregado.html'">
+                  <td>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white">
+                      <i class="fas fa-pencil-square fa-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                        </svg>
+                      </i>
+                    </a>
+                  </td>
                   <td>Roberio</td>
                   <td>+351 911 123 345</td>
                   <td>email@aubay.pt</td>
@@ -366,6 +415,17 @@
                   <td>Ativo</td>
                 </tr>
                 <tr onclick="location.href='detalhes_empregado.html'">
+                  <td>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white">
+                      <i class="fas fa-pencil-square fa-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                          <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                          <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                        </svg>
+                      </i>
+                    </a>
+                  </td>
                   <td>Monica Botelho</td>
                   <td>+351 911 123 345</td>
                   <td>email@aubay.pt</td>

@@ -302,7 +302,10 @@
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">Mensagens</h1>
-                    <a href="criar_mensagem.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Criar Nova Mensagem</a>
+                    <div>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Importar Mensagem</a>
+                        <a href="criar_mensagem.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Criar Nova Mensagem</a>
+                    </div>
                 </div>
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
@@ -314,182 +317,270 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
+                                        <th>Ações</th>
                                         <th>Destinatário</th>
                                         <th>Assunto</th>
                                         <th>Mensagem</th>
                                         <th>Canal</th>
+                                        <th>Grupo</th>
                                         <th>Data de entrega</th>
                                         <th>Status</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
                                     <tr>
+                                        <th>Ações</th>
                                         <th>Destinatário</th>
                                         <th>Assunto</th>
                                         <th>Mensagem</th>
                                         <th>Canal</th>
+                                        <th>Grupo</th>
                                         <th>Data de entrega</th>
                                         <th>Status</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Denis Baptista</td>
                                         <td>Novos Contratos</td>
                                         <td>Ola, segue contrato...</td>
                                         <td>E-mail</td>
+                                        <td>PHP</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Success</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-envelope fa-sm"></i></a>
+                                        </td>
                                         <td>Denis Baptista</td>
                                         <td>Novos Contratos</td>
                                         <td>Ola, segue contrato...</td>
                                         <td>Telegram</td>
+                                        <td>PHP</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Failed</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Denis Baptista</td>
                                         <td>Novos Contratos</td>
                                         <td>Ola, segue contrato...</td>
                                         <td>Whatsapp</td>
+                                        <td>PHP</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>In process</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Denis Baptista</td>
                                         <td>Novos Contratos</td>
                                         <td>Ola, segue contrato...</td>
                                         <td>SMS</td>
+                                        <td>PHP</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Denis Baptista</td>
                                         <td>Novos Contratos</td>
                                         <td>Ola, segue contrato...</td>
                                         <td>Whatsapp</td>
+                                        <td>PHP</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Thiago Bonfim</td>
                                         <td>Aumento</td>
                                         <td>Caro colaborador...</td>
                                         <td>E-mail</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Success</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-envelope fa-sm"></i></a>
+                                        </td>
                                         <td>Thiago Bonfim</td>
                                         <td>Aumento</td>
                                         <td>Caro colaborador...</td>
                                         <td>Telegram</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Failed</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Thiago Bonfim</td>
                                         <td>Aumento</td>
                                         <td>Caro colaborador...</td>
                                         <td>Whatsapp</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>In process</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Thiago Bonfim</td>
                                         <td>Aumento</td>
                                         <td>Caro colaborador...</td>
                                         <td>SMS</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Thiago Bonfim</td>
                                         <td>Aumento</td>
                                         <td>Caro colaborador...</td>
                                         <td>Whatsapp</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Fabi</td>
                                         <td>Welcome</td>
                                         <td>Dear Fabi, </td>
                                         <td>E-mail</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Success</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-envelope fa-sm"></i></a>
+                                        </td>
                                         <td>Fabi</td>
                                         <td>Welcome</td>
                                         <td>Dear Fabi, </td>
                                         <td>Telegram</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Failed</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Fabi</td>
                                         <td>Welcome</td>
                                         <td>Dear Fabi, </td>
                                         <td>Whatsapp</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>In process</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Fabi</td>
                                         <td>Welcome</td>
                                         <td>Dear Fabi, </td>
                                         <td>SMS</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Fabi</td>
                                         <td>Welcome</td>
                                         <td>Dear Fabi, </td>
                                         <td>Whatsapp</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Roberio</td>
                                         <td>Agradecimentos</td>
                                         <td>Caro Roberio, </td>
                                         <td>E-mail</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Success</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-envelope fa-sm"></i></a>
+                                        </td>
                                         <td>Roberio</td>
                                         <td>Agradecimentos</td>
                                         <td>Caro Roberio, </td>
                                         <td>Telegram</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Failed</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Roberio</td>
                                         <td>Agradecimentos</td>
                                         <td>Caro Roberio, </td>
                                         <td>Whatsapp</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>In process</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Roberio</td>
                                         <td>Agradecimentos</td>
                                         <td>Caro Roberio, </td>
                                         <td>SMS</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
                                     <tr onclick="location.href='detalhes_mensagem.html'">
+                                        <td>
+                                            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm white"><i class="fas fa-trash fa-sm"></i></a>
+                                        </td>
                                         <td>Roberio</td>
                                         <td>Agradecimentos</td>
                                         <td>Caro Roberio, </td>
                                         <td>Whatsapp</td>
+                                        <td>Java</td>
                                         <td>14/11/2022 17:33</td>
                                         <td>Pending</td>
                                     </tr>
